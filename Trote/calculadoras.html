@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trote solidário - 2025 </title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js"> </script>
+</head>
+
+<body>
+    <header> <!-- cabeçalho do corpo da pagina-->
+        Trote solidário - 2025
+
+    </header>
+    <nav>
+        <div id="links-menu">
+            <a href="index.html"> Home </a>
+            <a href="introducao.html"> Introdução </a>
+            <a href="objetivo.html"> Objetivo </a>
+            <a href="formato.html"> Formato</a>
+            <a href="gincana.html"> Gincana</a>
+            <a href="integracao.html">Integração</a>
+            <a href="observacoes.html"> Observações</a>
+            <a href="calculadoras.html"> Calculadoras</a>
+        </div>
+        <img src="images/trote.jpg" alt="trote solidário" />
+    </nav>
+    <div class="container">
+        <h2> Calculadora de pontuação</h2>
+        <form>
+            <div> 
+                <label> Selecione a cor da equipe </label>
+                <select id="equipe">
+                <option value="Laranja"> Laranja</option>
+                <option value="Preta"> Preta</option>
+                <option value="Roxa"> Roxa</option>
+                <option value="Verde"> Verde</option>
+                <option value="Vermelha"> Vermelha</option>
+                </select>
+            </div>
+            <div class="campos">
+                <label> Ação Social (pts)</label>
+                <input type="number" id="acaoSocial">
+            </div>
+
+            <div class="campos">
+                <label> Homenagem (pts)</label>
+                <input type="number" id="homenagem">
+            </div>
+
+            <div class="campos">
+                <label> Caixa de Leite (litros)</label>
+                <input type="number" id="leite" />
+            </div>
+
+            <div class="campos">
+                <label> Kit Alimentação</label>
+                <input type="number" id="kit" />
+            </div>
+
+            <div class="campos">
+                <label> Lata de Suplemento </label>
+                <input type="number" id="suplemento" />
+            </div>
+            
+            <div class="campos">
+                <label> Pacote Arroz 5kg</label>
+                <input type="number" id="arroz5kg" />
+            </div>
+            <div class="campos">
+                <label>Pacote Arroz 1kg</label>
+                <input type="number" id="arroz1kg" />
+            </div>
+            <div class="campos">
+                <label>Pacote feijão 2kg</label>
+                <input type="number" id="feijao2kg" />
+            </div>
+            <div class="campos">
+                <label>Pacote feijao 1kg</label>
+                <input type="number" id="feijao1kg" />
+            </div>
+            <div class="campos">
+                <label>Pacote macarrão 400/500g </label>
+                <input type="number" id="macarrao" />
+            </div>
+
+            <div class="campos">
+                <label>Óleo 900ml</label>
+                <input type="number" id="oleo" />
+            </div>
+
+            <div class="campos">
+                <label> Mascote </label>
+                <input type="number" id="mascote">
+            </div>
+
+            <div class="campos">
+                <label> Caracterização e Animação</label>
+                <input type="number" id="caracterizacaoEanimacao">
+            </div>
+
+            <div class="campos">
+                <label> Atividades Recreativas</label>
+                <input type="number" id="atividadesRecreativas">
+            </div>
+
+            <div class="campos">
+                <label> Audio Visual</label>
+                <input type="number" id="audiovisual">
+            </div>
+
+            <div class="campos">
+                <label> Doação de Sangue</label>
+                <input type="number" id="sangue">
+            </div>
+
+            <div class="campos">
+                <button type="button" onclick="calcular()"> <span>Calcular</span>
+
+            </div>
+            </button>
+
+            <label id="soma"> </label>
+    </div>
+    </form>
+</body>
+
+</html>
